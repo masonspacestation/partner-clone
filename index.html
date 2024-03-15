@@ -10,22 +10,39 @@
   <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
     defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="debug">
   <!-- NOTE add hero -->
-  <section class="container-fluid">
+  <section class="container-fluid hero-img text-light">
     <header class="row justify-content-between px-3">
-      <div class="col-3">Nova</div>
-      <div class="col-6">Link link link link</div>
+      <div class="col-3 fs-2 font-semibold">Nova</div>
+      <div class="col-6 align-content-middle">
+        <div class="row justify-content-end p-3">
+          <div class="col-2 font-semibold">Home</div>
+          <div class="col-2 font-light">About</div>
+          <div class="col-2 font-light">Services</div>
+          <div class="col-2 font-light">Portfolio</div>
+        </div>
+      </div>
     </header>
-    <div class="row">
-      <div class="col-4">
-        <h1>Focus on What Matters</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est praesentium neque cum.</p>
-        <button>Get Started</button>
-        <button>Watch Video</button>
+    <div class="row hero-space">
+      <div class="col-3 m-5">
+        <h1 class="font-semibold pb-2">Focus on What Matters</h1>
+        <p class="fs-6 pb-1 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit, neque enim
+          fugiat
+          delectus repellendus ratione, reiciendis laboriosam velit asperiores ex beatae, sequi necessitatibus earum.
+        </p>
+        <button class="btn btn-primary rounded rounded-pill btn-text px-4 p-2 justify-content-center">Get
+          Started</button>
+        <button class="btn btn-clear text-light btn-text">
+          <i class="mdi mdi-play-circle-outline fs-3 text-primary">
+          </i> Watch Video</button>
       </div>
     </div>
   </section>
@@ -34,11 +51,11 @@
   <main class="container-fluid">
     <section class="container-fluid">
       <div class="row justify-content-center">
-        <h3 class="text-center">Why Choose Us</h3>
+        <h3 class="text-center py-4">Why Choose Us</h3>
         <div class="col-9 bg-secondary">
-          <div class="row">
+          <div class="row ">
             <div class="col-4"><img src="assets/imagemain.png" alt=""></div>
-            <div class="col-8">
+            <div class="col-6 my-5 p-5">
               <h3>h3</h3>
               <h5>Subtitle</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae! Illo nulla vero enim,
@@ -53,7 +70,7 @@
     <!-- SECTION Our services -->
     <section class="container p-4">
       <div class="row">
-        <h3>Our Services</h3>
+        <h3 class="text-center py-4">Our Services</h3>
       </div>
       <div class="row g-3">
         <div class="col-4">
@@ -154,7 +171,7 @@
     <section class="container">
       <div class="row">
         <div>
-          <h3>Recent Blog Posts</h3>
+          <h3 class="text-center py-4">Recent Blog Posts</h3>
         </div>
       </div>
       <div class="row">
@@ -166,7 +183,7 @@
             non
             recusandae sapiente consequuntur.
           </p>
-          <button>Read More</button>
+          <button class="btn-clear text-primary btn-text">Read More</button>
         </div>
 
         <div class="col-3 p-3">
@@ -177,7 +194,7 @@
             non
             recusandae sapiente consequuntur.
           </p>
-          <button>Read More</button>
+          <button class="btn-clear text-primary btn-text">Read More</button>
         </div>
 
         <div class="col-3 p-3">
@@ -188,7 +205,7 @@
             non
             recusandae sapiente consequuntur.
           </p>
-          <button>Read More</button>
+          <button class="btn-clear text-primary btn-text">Read More</button>
         </div>
 
         <div class="col-3 p-3">
@@ -199,7 +216,7 @@
             non
             recusandae sapiente consequuntur.
           </p>
-          <button>Read More</button>
+          <button class="btn-clear text-primary btn-text">Read More</button>
         </div>
       </div>
     </section>
@@ -207,33 +224,35 @@
 
   </main>
   <!-- footer -->
-  <footer class="container-fluid">
-    <section class="row bg-body-secondary">
-      <div class="col-5">
-        <h2>Nova</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam non, provident fuga laudantium ex
-          fugit quas ut error eos facere ipsum nobis atque!</p>
+  <footer class="container-fluid bg-body-secondary">
+    <section class="container py-5 my-5">
+      <div class="row">
+        <div class="col-5">
+          <h2>Nova</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam non, provident fuga laudantium ex
+            fugit quas ut error eos facere ipsum nobis atque!</p>
 
-      </div>
-      <div class="col-7">
-        <div class="row">
-          <div class="col-3">
-            Useful Links
-          </div>
-          <div class="col-3">
-            Our Services
-          </div>
-          <div class="col-3">
-            Contact Us
-          </div>
-          <div class="col-3">
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-3">
+              Useful Links
+            </div>
+            <div class="col-3">
+              Our Services
+            </div>
+            <div class="col-3">
+              Contact Us
+            </div>
+            <div class="col-3">
 
+            </div>
           </div>
         </div>
       </div>
     </section>
     <div class="row bg-white text-center">
-      <p>Copyright NOVA All rights reserved<br>
+      <p>Copyright <span class="font-bold">NOVA</span> All rights reserved<br>
         Designed by us.</p>
     </div>
   </footer>
